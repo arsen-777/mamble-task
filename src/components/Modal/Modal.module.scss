@@ -1,0 +1,57 @@
+.modalContainer {
+  // width: 1440px;
+  // height: 1034px;
+  // background: rgba(0, 0, 0, 0.25);
+  // position: fixed;
+  // z-index: 1;
+
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.25);
+}
+.modal {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background: #ffffff;
+  border-radius: 4px;
+  margin: 15% auto;
+  border: none;
+  @media (max-width: 376px) {
+    width: 324px;
+    height: 140px;
+    // margin-top: 453px;
+  }
+  p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #008594;
+  }
+  .buttons {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+      text-transform: capitalize;
+      color: #174348;
+      cursor: pointer;
+    }
+  }
+}
